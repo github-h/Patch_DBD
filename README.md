@@ -20,7 +20,7 @@
 
 至于会不会**封号**，并不知道，请自行决定是否使用该脚本，本脚本只是简化操作，使用即为同意承担风险
 ## 下载
-[Github](https://github.com/g1thub-h/Patch_DBD/releases)
+[Github](https://github.com/g1thub-h/Patch_DBD/releases)/[百度云盘](https://pan.baidu.com/s/1uji21EN59eTcLSaq3NGapg) 提取码: aili
 
 ## 补充
 
