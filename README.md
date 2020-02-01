@@ -19,6 +19,8 @@
 > https://tieba.baidu.com/p/6276493302
 
 至于会不会**封号**，并不知道，请自行决定是否使用该脚本，本脚本只是简化操作，使用即为同意承担风险
+## 下载
+[Github](https://github.com/g1thub-h/Patch_DBD/releases)/[百度云盘]()
 
 ## 补充
 
