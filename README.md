@@ -43,7 +43,7 @@
 
 ## 下载
 
-[Github](https://github.com/g1thub-h/Patch_DBD/releases)/[百度云盘] 提取码: aili
+[Github](https://github.com/g1thub-h/Patch_DBD/releases)/[百度云盘](https://pan.baidu.com/s/1T1E7viiT_skcLKgpsw0AvA) 提取码: aili
 
 ## 补充
 
