@@ -35,11 +35,11 @@
 
 **此为解锁60帧数但没有去抗锯齿**
 
-![before](https://raw.githubusercontent.com/g1thub-h/Patch_DBD/master/pic/before.png)
+![before](https://raw.githubusercontent.com/g1thub-h/Patch_DBD/master/pic/before.jpg)
 
 **此为解锁60帧率去了抗锯齿（注意看人物轮廓，可以看出帧数也有提高）**
 
-![after](https://raw.githubusercontent.com/g1thub-h/Patch_DBD/master/pic/after.png)
+![after](https://raw.githubusercontent.com/g1thub-h/Patch_DBD/master/pic/after.jpg)
 
 ## 下载
 
@@ -48,3 +48,5 @@
 ## 补充
 
 *运行成功后,建议设置游戏为低画质+关闭自动调整，以得到更好体验*
+
+![setting](https://raw.githubusercontent.com/g1thub-h/Patch_DBD/master/pic/setting.jpg)
