@@ -35,11 +35,11 @@
 
 **此为解锁60帧数但没有去抗锯齿**
 
-![before](.\pic\before.png)
+![before](https://raw.githubusercontent.com/g1thub-h/Patch_DBD/master/pic/before.png)
 
 **此为解锁60帧率去了抗锯齿（注意看人物轮廓，可以看出帧数也有提高）**
 
-![after](.\pic\after.png)
+![after](https://raw.githubusercontent.com/g1thub-h/Patch_DBD/master/pic/after.png)
 
 ## 下载
 
