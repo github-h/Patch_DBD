@@ -1,6 +1,15 @@
 # Patch_DBD
 ## 简介
-黎明杀机【解锁帧数】和【解决当前杀鸡画质高糊】的问题（也就是关闭默认抗锯齿的效果）
+本脚本由付导的录播组制作 当前版本为 V1.1 （20200311）
+- 1.将脚本重写，细化可优化选项，提供更多的选择
+
+- 2.修复游戏新版本(3.6.0)更新后，脚本失效的问题
+
+- 3.增加容错率，修改部分说明
+
+- 4.更改脚本名称为全英文,防止运行脚本时闪退
+
+本脚本可【解锁帧数】和【解决当前杀鸡画质高糊】的问题（也就是关闭默认抗锯齿的效果）
 ## 注意
 请勿二改 大量传播
 
@@ -18,9 +27,23 @@
 
 > https://tieba.baidu.com/p/6276493302
 
-至于会不会**封号**，并不知道，请自行决定是否使用该脚本，本脚本只是简化操作，使用即为同意承担风险
+>https://forum.deadbydaylight.com/en/discussion/136099/how-can-i-disable-anti-aliasing
+
+至于会不会**封号**，并**不知道**，请自行决定是否使用该脚本，本脚本只是简化操作，使用即为**同意承担风险**
+
+## 效果图
+
+**此为解锁60帧数但没有去抗锯齿**
+
+![before](.\pic\before.png)
+
+**此为解锁60帧率去了抗锯齿（注意看人物轮廓，可以看出帧数也有提高）**
+
+![after](.\pic\after.png)
+
 ## 下载
-[Github](https://github.com/g1thub-h/Patch_DBD/releases)/[百度云盘](https://pan.baidu.com/s/1uji21EN59eTcLSaq3NGapg) 提取码: aili
+
+[Github](https://github.com/g1thub-h/Patch_DBD/releases)/[百度云盘] 提取码: aili
 
 ## 补充
 
