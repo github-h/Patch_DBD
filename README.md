@@ -47,6 +47,8 @@
 
 [Github](https://github.com/g1thub-h/Patch_DBD/releases)/[百度云盘](https://pan.baidu.com/s/1eWLX4dKPHZQe_sImIjbqQg) 提取码: aili
 
+**用过【先前版本】必须先运行 3 恢复初始文件再运行其他的**
+
 ## 补充
 
 *运行成功后,建议设置游戏为低画质+关闭自动调整，以得到更好体验*
