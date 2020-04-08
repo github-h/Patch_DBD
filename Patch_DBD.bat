@@ -1,5 +1,5 @@
 @echo off&PUSHD %~DP0 &TITLE Patch_DBD
-
+color 0A
 >NUL 2>&1 REG.exe query "HKU\S-1-5-19" || (
     ECHO SET UAC = CreateObject^("Shell.Application"^) > "%TEMP%\Getadmin.vbs"
     ECHO UAC.ShellExecute "%~f0", "%1", "", "runas", 1 >> "%TEMP%\Getadmin.vbs"
@@ -9,14 +9,14 @@
 )
 
 echo --------------------------------------------------------------------------
-echo 本脚本由付导的录播组制作 当前版本为 V1.2 (20200403)
+echo 本脚本由付导的录播组制作 当前版本为 V1.3 (20200408)
 echo.&echo 请勿二改 大量传播
-echo.&echo 本脚本可【解锁帧数】和【解决当前杀鸡画质高糊】的问题（也就是关闭默认抗锯齿的效果）
+echo.&echo 本脚本可【解锁官方帧数限制】、【自定义锁帧】和【解决当前杀鸡画质高糊】
 echo.&echo 该脚本失效可以在 GitHub 上提交 Issues
 echo.
 echo --------------------------------------------------------------------------
 echo 凡是提示拒绝访问的都是没有以管理员模式开启！！！
-echo 请关闭游戏后运行此脚本，此脚本【运行一次】后就不用再打开了
+echo 请【关闭游戏】后运行此脚本，此脚本【运行一次】后就不用再打开了
 echo 原理是对游戏配置文件 Engine.ini / GameUserSettings.ini 文件进行修改，也就是贴吧所流传的解锁帧数方法然后简化成脚本操作
 echo.
 echo 具体原理在以下网站可以找到
@@ -50,26 +50,30 @@ echo.&echo 请在打开的网页中找到并且输入UP的【昵称】然后回车,昵称应该为大小写加下
 choice /t 2 /d y /n >nul
 explorer "https://space.bilibili.com/180659383"
 echo.&set /p Nicename=
-if %Nicename%==Ailiaili_ goto :Start
+if %Nicename%==Ailiaili_ goto :Meun
 exit
 
-:Start
+:Meun
 cls
 
-echo.&echo 如果游戏画面出现撕裂等问题，请使用 3 恢复
-echo.&echo 为了使脚本发挥全部作用，您【可能】需要配合选项 1 和 2 一起使用
+echo.&echo 如果您觉得您的游戏使用脚本后出现了什么问题，请使用 4 来撤销所有操作并恢复官方原始文件
+echo.&echo 为了使脚本发挥全部作用，您【可能】需要配合选项 1 和 3 一起使用
 echo --------------------------------------------------------------------------
-echo.&echo 请选择要操作的选项（用过【先前版本】必须先运行 3 再运行其他的）
-echo.&echo 1.解锁帧数 (也就是解锁60帧)
-echo.&echo 2.解决当前杀鸡画质高糊 (去除垃圾ue4的抗锯齿，使画面锐利，恢复原来的那种画质)
-echo.&echo 3.恢复原始文件
+echo.&echo 请选择要操作的选项（用过【先前版本】必须先运行 4 再运行其他的）
+echo.&echo 1.解锁【官方】锁帧 (去除官方锁60帧限制)
+echo.&echo 2.【自定义】锁帧 (手动设置帧数上限防止游戏因掉帧变卡，【必须】使用 1 后该设置才能生效，若不设置则为不锁帧)
+echo.&echo 3.解决当前杀鸡画质高糊 (去除垃圾ue4的抗锯齿，使画面锐利，强烈推荐！)
+echo.&echo 4.恢复原始文件
 echo.&echo 0.退出
 echo.&set /p choice=输入数字后回车：
 
 if %choice%==1 goto Unlock
-if %choice%==2 goto Shut
-if %choice%==3 goto Restore
+if %choice%==2 goto Confirm
+if %choice%==3 goto Shut
+if %choice%==4 goto Restore
 if %choice%==0 goto End
+if %choice%==debug goto Debug
+exit
 
 :Unlock
 cls
@@ -92,10 +96,63 @@ echo;!str:True=False!
 ))>>%gameuserset%.temp
 move /y %gameuserset%.temp %gameuserset%
 
-echo.&echo 运行成功,已经解锁60帧了
+echo.&echo 运行成功,已经去除官方锁60帧限制了
+echo.&echo 建议配合使用自定义【锁帧】来达到稳定游戏体验
 echo.&echo 即将回到选择界面
-choice /t 3 /d y /n >nul
-goto Start
+choice /t 5 /d y /n >nul
+goto Meun
+
+:Confirm
+cls
+
+echo.&echo 请再次确定您是否已经解锁【官方】锁帧，不解锁该设置将不会生效
+echo.&echo 该设置可能可以有效【解决】因为无帧数上限导致【帧率不稳】而出现的【游戏卡顿】问题
+echo.&echo 在解锁【官方】锁帧后，您以后可以直接进入本选项，直接修改帧数上限
+echo.&echo 您输入的帧数必须为【纯数字】，60 144 80 90 100 等任意数字都可，若为 0 则为不锁帧
+echo.&echo                      【关于数值选择】
+echo.&echo 您可以【先不】自定义锁帧，运行游戏后查看游戏【平均帧数】，然后关闭游戏
+echo.&echo 将【稳定的平均帧数的略高值】作为【自定义值】(尽量数值别小于60，小于60优化了没意义)
+echo.&echo 您若有任何误操作行为怀疑疑似出现问题，请回到主菜单使用 4 来撤销所有操作并恢复官方原始文件
+echo -------------------------------------------------------------------------------------------------
+echo.&echo N.回到主菜单
+echo.&echo Y.确认已经解锁【官方】锁帧，并进入下一步【自定义】锁帧
+echo.&set /p choice=输入 Y 或者 N 后回车：
+
+if %choice%==n goto Meun
+if %choice%==N goto Meun
+if %choice%==y goto Lock
+if %choice%==Y goto Lock
+exit
+
+:Lock
+
+echo.&echo 请输入您想锁定的帧数，并回车确认。【必须】为纯数字，例如 60 144 等，输入 0 则为不锁帧
+set /p new=
+
+setlocal enabledelayedexpansion
+(for /f "tokens=1,2,3 delims=:=" %%i in ('findstr /n .* "%gameuserset%"') do (
+set str=%%j
+set value=%%k
+
+if !str!==FrameRateLimit (
+    
+echo;FrameRateLimit=%new%.000000
+
+) else if !str!==SharedLoginInformation (
+    echo SharedLoginInformation=^(LoginProvider="",AuthToken=""^)
+) else if !str!==DeviceLoginTokenID (
+    echo DeviceLoginTokenID=
+) else if "!value!"=="" (
+    echo;!str!
+) else (
+	echo;!str!=!value!
+)
+))>>%gameuserset%.temp
+move /y %gameuserset%.temp %gameuserset%
+
+echo.&echo 您当前游戏帧数已经锁定为 %new% fps
+choice /t 5 /d y /n >nul
+goto Meun
 
 :Shut
 cls
@@ -109,11 +166,12 @@ cls
 (echo r.DefaultFeature.LensFlare=False) >> %engine%
 (echo r.DefaultFeature.AntiAliasing=0) >> %engine%
 
+choice /t 2 /d y /n >nul
 echo.&echo 运行成功,Up建议设置游戏为【低画质+关闭自动调整】，以得到更好体验
 echo.&echo 请按任意键表明你已知晓要同时修改游戏内设置
 echo.&pause
 echo.&echo 正在回到选择界面
-goto Start
+goto Meun
 
 :Restore
 cls
@@ -145,10 +203,34 @@ echo;!str:False=True!
 ))>>%gameuserset%.temp
 move /y %gameuserset%.temp %gameuserset%
 
+(for /f "tokens=1,2,3 delims=:=" %%i in ('findstr /n .* "%gameuserset%"') do (
+set str=%%j
+set value=%%k
+
+if !str!==FrameRateLimit (
+    
+echo;FrameRateLimit=0.000000
+
+) else if !str!==SharedLoginInformation (
+    echo SharedLoginInformation=^(LoginProvider="",AuthToken=""^)
+) else if !str!==DeviceLoginTokenID (
+    echo DeviceLoginTokenID=
+) else if "!value!"=="" (
+    echo;!str!
+) else (
+	echo;!str!=!value!
+)
+))>>%gameuserset%.temp
+move /y %gameuserset%.temp %gameuserset%
+
 echo.&echo 恢复完成,已经回退到官方初始文件，若不放心请重新验证游戏完整性
 echo.&echo 正在回到选择界面
 choice /t 3 /d y /n >nul
-goto Start
+goto Meun
 
 :End
 exit
+
+:Debug
+Start %engine%
+Start %gameuserset%
