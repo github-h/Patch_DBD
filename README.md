@@ -60,7 +60,7 @@
 
 ## 下载
 
-[Github](https://github.com/g1thub-h/Patch_DBD/releases)
+[Github](https://github.com/g1thub-h/Patch_DBD/releases)/~~[百度云盘](https://pan.baidu.com/s/1pm_YPrzfGPERMHiL2Tz3Og)~~提取码: aili
 
 **用过【先前版本】必须先运行 4 恢复初始文件再运行其他的**
 
