@@ -1,8 +1,12 @@
-# Patch_DBD
+# Patch_DBD（失效）
+
+**因开发者故意屏蔽配置文件，该脚本功能已经失效，所做修改也无效，在出现新的方法前将无限期停更**
+
+**可能可以通过N卡设置强制去修改，具体方法请自行探索**
 
 ## 简介
 
-本脚本由付导的录播组制作 当前版本为 V1.4b1 （20200419）
+本脚本由付导的录播组制作 当前版本为 V1.4b2 （20200429）
 
 - 1.修复部分解锁帧数失败的bug
 
@@ -60,7 +64,7 @@
 
 ## 下载
 
-[Github](https://github.com/g1thub-h/Patch_DBD/releases)/~~[百度云盘](https://pan.baidu.com/s/1pm_YPrzfGPERMHiL2Tz3Og)~~提取码: aili
+[Github](https://github.com/g1thub-h/Patch_DBD/releases)/~~[百度云盘]()~~提取码: aili
 
 **用过【先前版本】必须先运行 4 恢复初始文件再运行其他的**
 
