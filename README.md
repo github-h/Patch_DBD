@@ -54,19 +54,19 @@
 
 **此为解锁60帧数但没有去抗锯齿**
 
-![before](https://raw.githubusercontent.com/g1thub-h/Patch_DBD/master/pic/before.jpg)
+![before](https://raw.githubusercontent.com/github-h/Patch_DBD/master/pic/before.jpg)
 
 **此为解锁60帧率去了抗锯齿（注意看人物轮廓，可以看出帧数也有提高）**
 
-![after](https://raw.githubusercontent.com/g1thub-h/Patch_DBD/master/pic/after.jpg)
+![after](https://raw.githubusercontent.com/github-h/Patch_DBD/master/pic/after.jpg)
 
 **此为自定义锁 88 帧**
 
-![after](https://raw.githubusercontent.com/g1thub-h/Patch_DBD/master/pic/lock.jpg)
+![after](https://raw.githubusercontent.com/github-h/Patch_DBD/master/pic/lock.jpg)
 
 ## 下载
 
-[Github](https://github.com/g1thub-h/Patch_DBD/releases)/~~[百度云盘]()~~提取码: aili
+[Github](https://github.com/github-h/Patch_DBD/releases)/~~[百度云盘]()~~提取码: aili
 
 **用过【先前版本】必须先运行 4 恢复初始文件再运行其他的**
 
@@ -74,4 +74,4 @@
 
 *运行成功后,建议设置游戏为低画质+关闭自动调整，以得到更好体验*
 
-![setting](https://raw.githubusercontent.com/g1thub-h/Patch_DBD/master/pic/setting.jpg)
+![setting](https://raw.githubusercontent.com/github-h/Patch_DBD/master/pic/setting.jpg)
