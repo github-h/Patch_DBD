@@ -66,7 +66,7 @@
 
 ## 下载
 
-[Github](https://github.com/github-h/Patch_DBD/releases)/~~[百度云盘]()~~提取码: aili
+[Github](https://github.com/github-h/Patch_DBD/releases) / [百度云盘](https://pan.baidu.com/s/1c11eGm0gnzKUrGrWfTPqnQ#aili) 提取码: aili / [蓝奏云](https://aili.lanzous.com/iz5Fvixpmeh) 密码:agfq
 
 **用过【先前版本】必须先运行 4 恢复初始文件再运行其他的**
 
