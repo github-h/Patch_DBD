@@ -160,7 +160,7 @@ goto Meun
 cls
 
 (echo.) >> %engine%
-(echo [/Script/Engine.GarbageCollectionSettings]) >> %engine%
+(echo [/Script/Engine.RendererOverrideSettings]) >> %engine%
 (echo r.DefaultFeature.Bloom=False) >> %engine%
 (echo r.DefaultFeature.AmbientOcclusion=False) >> %engine%
 (echo r.DefaultFeature.AmbientOcclusionStaticFraction=False) >> %engine%
