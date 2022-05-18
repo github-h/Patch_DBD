@@ -46,7 +46,9 @@
 
 > https://tieba.baidu.com/p/6276493302
 
->https://forum.deadbydaylight.com/en/discussion/136099/how-can-i-disable-anti-aliasing
+> https://forum.deadbydaylight.com/en/discussion/136099/how-can-i-disable-anti-aliasing
+
+> https://forum.deadbydaylight.com/en/discussion/320752/fixed-anti-aliasing-forcefully-enabled-in-5-7-0
 
 至于会不会**封号**，并**不知道**，请自行决定是否使用该脚本，本脚本只是简化操作，使用即为**同意承担风险**
 
