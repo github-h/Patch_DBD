@@ -12,6 +12,16 @@
 
 ## 更新日志
 
+### V1.6 - 2023-04-19
+
+- 1.适配新的配置文件路径，使失效的脚本重新发挥作用（适用于6.7.0版本）
+
+- 2.在一台主机上进行过解锁+锁帧测试是正常的，去抗锯齿没测试过
+
+- 3.依旧不支持EPIC客户端（是真的懒得下一坨新答辩，如果能提供EPIC的路径可以做一个适配
+
+- 4.感谢[B站@楪绫罗](https://www.bilibili.com/opus/785953846908157954)和[Steam讨论组](https://steamcommunity.com/app/381210/discussions/0/5789982181552749633/)提供的新路径，猜测应该是智障组改错了，讨论区说会发布修复补丁，呃呃那也太智障了。不过也有其他虚幻引擎使用这个新路径作为配置文件的，不懂智障的想法。
+
 ### V1.5 - 2022-05-18
 
 - 1.修复失效的抗锯齿关闭选项，现在可以重新关闭垃圾抗锯齿了（适用于5.7.2版本）
@@ -78,7 +88,7 @@
 
 ## 下载
 
-[Github](https://github.com/github-h/Patch_DBD/releases) / [百度云盘](https://pan.baidu.com/s/1c11eGm0gnzKUrGrWfTPqnQ#aili) 提取码: aili / [蓝奏云](https://aili.lanzous.com/iz5Fvixpmeh) 密码:agfq
+[Github](https://github.com/github-h/Patch_DBD/releases) / [蓝奏云](https://aili.lanzoub.com/b018t6jqf) 密码:6a5b
 
 **用过【先前版本】必须先运行 4 恢复初始文件再运行其他的**
 

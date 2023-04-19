@@ -10,7 +10,7 @@ color 0A
 )
 
 echo --------------------------------------------------------------------------
-echo 本脚本由付导的录播组制作 当前版本为 V1.5 (20220518)
+echo 本脚本由付导的录播组制作 当前版本为 V1.6 (20230419)
 echo.&echo 请勿二改 传播请标明原出处
 echo.&echo 本脚本可【解锁官方帧数限制】、【自定义锁帧】和【解决当前杀鸡画质高糊】
 echo.&echo 该脚本失效可以在 GitHub 上提交 Issues
@@ -32,8 +32,8 @@ echo.&echo 若担心出现不可控问题请直接【右上角关闭】脚本并且删除,脚本到此并没有进
 echo.
 echo ---------------------------------------------------------------------------
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-set engine=%localappdata%\DeadByDaylight\Saved\Config\WindowsNoEditor\Engine.ini
-set gameuserset=%localappdata%\DeadByDaylight\Saved\Config\WindowsNoEditor\GameUserSettings.ini
+set engine=%localappdata%\DeadByDaylight\Saved\Config\WindowsClient\Engine.ini
+set gameuserset=%localappdata%\DeadByDaylight\Saved\Config\WindowsClient\GameUserSettings.ini
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 echo 如果你认真阅读了以上内容，并且同意操作，请按照指示输入，输入其他的都会【导致脚本退出】
